@@ -1,0 +1,10 @@
+.DS_Store
+node_modules
+*.log
+.next
+dist
+*.local
+.env
+.cache
+backend/dist
+frontend/dist
