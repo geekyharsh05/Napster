@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "target": "es2020",
-    "module": "ESNext",
-    "lib": ["es2017", "dom"],
+    "target": "ES2024",
+    "module": "commonjs",
+    "lib": ["ES2024", "dom"],
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "strict": true,

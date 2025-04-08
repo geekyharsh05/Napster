@@ -3,7 +3,6 @@ import cors from "cors";
 import morgan from "morgan";
 import helmet from "helmet";
 import dotenv from "dotenv";
-import "reflect-metadata";
 import Routes from "./routes/index";
 import { Database } from "./lib/db";
 

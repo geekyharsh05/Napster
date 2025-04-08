@@ -9,10 +9,10 @@ import StatRoutes from "./stat.route"
 const router = Router();
 
 router.use("/auth", AuthRoutes);
-router.use("/users", UserRoutes);
-router.use("/admin", AdminRoutes);
-router.use("/songs", SongRoutes);
-router.use("/albums", AlbumRoutes);
-router.use("/stats", StatRoutes);
+// router.use("/users", UserRoutes);
+// router.use("/admin", AdminRoutes);
+// router.use("/songs", SongRoutes);
+// router.use("/albums", AlbumRoutes);
+// router.use("/stats", StatRoutes);
 
 export default router;
