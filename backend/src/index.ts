@@ -20,9 +20,7 @@ app.use(morgan("dev"));
 app.use(
   cors({
     origin: function (origin, callback) {
-      const allowedOrigins = [
-        "http://localhost:5173",
-      ];
+      const allowedOrigins = ["http://localhost:5173"];
       if (!origin || allowedOrigins.includes(origin)) {
         callback(null, true);
       } else {
@@ -30,7 +28,7 @@ app.use(
       }
     },
     credentials: true,
-  }),
+  })
 );
 
 app.use("/api/v1/", Routes);

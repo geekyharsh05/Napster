@@ -24,7 +24,7 @@ export class Database {
 
       console.log("Successfully connected to MongoDB");
 
-      mongoose.connection.on("error", (err) => {
+      mongoose.connection.on("error", err => {
         console.error("MongoDB connection error:", err);
       });
 

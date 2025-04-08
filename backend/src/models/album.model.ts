@@ -2,7 +2,7 @@ import { getModelForClass, prop, modelOptions, Ref, DocumentType } from "@typego
 import { SongClass } from "./song.model";
 import { TimeStamps } from "@typegoose/typegoose/lib/defaultClasses";
 
-@modelOptions({ schemaOptions: {timestamps: true} })
+@modelOptions({ schemaOptions: { timestamps: true } })
 export class AlbumClass extends TimeStamps {
   @prop({ required: true })
   title!: string;
