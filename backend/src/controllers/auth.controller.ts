@@ -1,0 +1,19 @@
+import { Request, RequestHandler, Response } from "express";
+import { AuthService } from "../services/auth.service";
+import { asyncHandler } from "../utils/ayncHandler.util";
+
+export class AuthController {
+  private authService: AuthService;
+
+  constructor() {
+    this.authService = new AuthService();
+  }
+
+  public authCallback: RequestHandler = asyncHandler(async (req: Request, res: Response) => {
+    const result = await this.authService.authCallback(req.body);
+    return {
+      message: "User fetched successfully",
+      ...result,
+    };
+  });
+}
