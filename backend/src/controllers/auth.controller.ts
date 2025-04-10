@@ -1,4 +1,4 @@
-import { Request, RequestHandler, Response } from "express";
+import { Request, RequestHandler } from "express";
 import { AuthService } from "../services/auth.service";
 import { asyncHandler } from "../utils/ayncHandler.util";
 
